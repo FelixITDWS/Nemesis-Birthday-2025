@@ -67,3 +67,30 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@keyframes moveAround {
+  0% {
+    transform: translate(10vw, 10vh);
+  }
+  25% {
+    transform: translate(80vw, 20vh);
+  }
+  50% {
+    transform: translate(40vw, 80vh);
+  }
+  75% {
+    transform: translate(20vw, 40vh);
+  }
+  100% {
+    transform: translate(10vw, 10vh);
+  }
+}
+
+.moving-background {
+  position: fixed;
+  width: 200px; /* 調整大小 */
+  height: 200px;
+  animation: moveAround 15s linear infinite alternate; /* 隨機移動 */
+  /* z-index: -1; 確保圖片位於背景，不影響其他元素 */
+}
+
