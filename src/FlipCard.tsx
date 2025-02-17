@@ -17,11 +17,14 @@ const FlipCard: React.FC<FlipCardProps> = ({ frontImage, backImage }) => {
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         width: "100vw",
         height: "100vh",
         overflow: "hidden",
+        textAlign: "center",
+        gap: "10px",
       }}
     >
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
@@ -31,8 +34,8 @@ const FlipCard: React.FC<FlipCardProps> = ({ frontImage, backImage }) => {
           style={{
             cursor: "pointer",
             width: "90vw",
-            height: "auto",
             maxWidth: "90vh",
+            height: "auto",
             aspectRatio: "1311 / 930",
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
             borderRadius: "10px",
@@ -45,7 +48,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ frontImage, backImage }) => {
             alt="Front"
             style={{
               width: "100%",
-              height: "100%",
+              height: "auto",
               borderRadius: "10px",
             }}
           />
@@ -57,8 +60,8 @@ const FlipCard: React.FC<FlipCardProps> = ({ frontImage, backImage }) => {
           style={{
             cursor: "pointer",
             width: "90vw",
-            height: "auto",
             maxWidth: "90vh",
+            height: "auto",
             aspectRatio: "1311 / 930",
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
             borderRadius: "10px",
@@ -71,7 +74,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ frontImage, backImage }) => {
             alt="Back"
             style={{
               width: "100%",
-              height: "100%",
+              height: "auto",
               borderRadius: "10px",
             }}
           />

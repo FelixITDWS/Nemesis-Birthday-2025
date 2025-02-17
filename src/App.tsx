@@ -2,7 +2,7 @@ import React from "react";
 import FlipCard from "./FlipCard";
 import frontImage from "./assets/front.png";
 import backImage from "./assets/back.png";
-import backgroundImage from "./assets/Nemo.png"
+import backgroundImage from "./assets/Nemo.png";
 import "./index.css"; // 確保載入 CSS
 
 const App: React.FC = () => {
@@ -11,16 +11,16 @@ const App: React.FC = () => {
       <img src={backgroundImage} alt="Background" className="moving-background" />
 
       <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        width: "100vw",
-        height: "100vh",
-        textAlign: "center",
-        position: "relative",
-      }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100vw",
+          height: "100vh",
+          textAlign: "center",
+          position: "relative",
+        }}
       >
         <h1 style={{ marginTop: "50px", color: "black" }}>祝捏摸 2025 生日快樂</h1>
         <p style={{ color: "black" }}>... 點按翻開卡片 ...</p>
@@ -48,10 +48,9 @@ const App: React.FC = () => {
               textDecoration: "none",
               borderRadius: "5px",
               fontSize: "18px",
-              transition: "background-color 0.3s ease, transform 0.2s ease",
             }}
             onMouseOver={(e) => {
-              e.currentTarget.style.backgroundColor = "#fbafca";
+              e.currentTarget.style.backgroundColor = "#ff8fbf";
               e.currentTarget.style.transform = "scale(1.05)";
             }}
             onMouseOut={(e) => {
@@ -64,7 +63,6 @@ const App: React.FC = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
